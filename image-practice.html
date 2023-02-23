@@ -2,13 +2,22 @@
 <html>
   <head>
     <style>
-      .body {
-        margin-top: 0px;
-        margin-left: 0px;
-        margin-right: 0px;
-        margin-bottom: 0px;
+      
+      .div-preview{
+        width: 200px;
+        height: 185px;
+        border-style: solid;
+        border-radius: 10px;
+        border-width: 2px;
+        display: inline-block;
+        margin-right: 12px;
+        text-align: center;
+        /* vertical-align: top; */
       }
       .hershel-format {
+        margin-right: auto;
+        margin-left: auto;
+        margin-top: 10px;
         width: 60px;
         border-radius: 400px;
         object-fit: contain;
@@ -16,13 +25,15 @@
         border-width: 3px;
         border-style: solid;
         border-color: aqua;
+        display: block;
       }
       .search-bar {
-        vertical-align: top;
         margin-top: 10px;
         font-weight: bold;
         border-radius: 5px;
         border-width: 10px;
+        display: block;
+        margin-left: 10px;
       }
       .tweet-button {
         font-size: 16px;
@@ -35,24 +46,45 @@
         padding-bottom: 8px;
         vertical-align: top;
         margin-top: 10px;
+        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3); 
         transition: 0.15s;
+
+        
       }
       .tweet-button:hover {
         background-color: coral;
         opacity: 0.8;
         cursor: pointer;
+        
       }
       .tweet-button:active{
         opacity: 0.3;
         border-color: rgb(100, 100, 203);
-        color: black
+        color: black;
+        margin-top: 15px;
+        margin-left: 5px;
+        box-shadow: none;
       }
     </style>
     <title>Hershel picture</title>
   </head>
   <body class="body">
-    <img class = "hershel-format" src="thumbnails/hershelpic.jpeg">
-    <input class="search-bar" type="search-bar" placeholder="name" name="name">
-    <button class="tweet-button"> Tweet</button>
+    <div class="div-preview">
+      <div>
+        <img class = "hershel-format" src="thumbnails/hershelpic.jpeg">
+      </div>
+      <div>
+        <input class="search-bar" type="search-bar" placeholder="name" name="name">
+      </div>
+      <div>
+        <button class="tweet-button"> Tweet</button>
+      </div>
+    </div>
+    
+    <div class="div-preview">
+      <img class = "hershel-format" src="thumbnails/hershelpic.jpeg">
+      <input class="search-bar" type="search-bar" placeholder="last" name="name">
+      <button class="tweet-button"> LeBron</button>
+    </div>
   </body>
 </html>
