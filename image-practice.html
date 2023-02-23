@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      .body {
+        margin-top: 0px;
+        margin-left: 0px;
+        margin-right: 0px;
+        margin-bottom: 0px;
+      }
+      .hershel-format {
+        width: 60px;
+        border-radius: 400px;
+        object-fit: contain;
+        object-position: center;
+        border-width: 3px;
+        border-style: solid;
+        border-color: aqua;
+      }
+      .search-bar {
+        vertical-align: top;
+        margin-top: 10px;
+        font-weight: bold;
+        border-radius: 5px;
+        border-width: 10px;
+      }
+      .tweet-button {
+        font-size: 16px;
+        color:rgb(100, 100, 203);
+        background-color: antiquewhite;
+        border-radius: 3px;
+        border-color: coral;
+        border-style: solid;
+        padding-top: 8px;
+        padding-bottom: 8px;
+        vertical-align: top;
+        margin-top: 10px;
+        transition: 0.15s;
+      }
+      .tweet-button:hover {
+        background-color: coral;
+        opacity: 0.8;
+        cursor: pointer;
+      }
+      .tweet-button:active{
+        opacity: 0.3;
+        border-color: rgb(100, 100, 203);
+        color: black
+      }
+    </style>
+    <title>Hershel picture</title>
+  </head>
+  <body class="body">
+    <img class = "hershel-format" src="thumbnails/hershelpic.jpeg">
+    <input class="search-bar" type="search-bar" placeholder="name" name="name">
+    <button class="tweet-button"> Tweet</button>
+  </body>
+</html>

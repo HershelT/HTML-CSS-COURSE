@@ -1,4 +1,3 @@
-<style>
   /* removes duplication 
   targets all p elements on page
   styles can be targeted on multiple styles
@@ -7,7 +6,7 @@
   more specific selecto has priority
   p is less specific than class like .video-title so it doesnt overide*/
   p {
-    font-family: Arial;
+    font-family: Roboto;
     margin-top: 0px;
     margin-bottom: 0px;
   }
@@ -66,38 +65,3 @@
     text-decoration: underline;
     cursor: pointer;
   }
-</style>
-
-
-
-<p class="video-title">
-  Talking Tech and AI with Google CEO Sundar Pichai!
-</p>
-<!-- html identity for middle dot -->
-<p class="video-stats">
-  3.4M views &#183; 6 months ago
-</p>
-
-<p class="video-author">
-  Marques Brownlee &#10003; 
-</p>
-
-<p class="video-description">
-  Talking tech and AI on the heels of Google I/O. 
-  Also a daily driver phone reveal from Google's CEO.
-  Shoutout to Sundar!
-</p>
-
-<p class="apple-text">
-  Shop early for the best selection of holiday
-  favourites. <span class="shop-link">Shop now &#62;</span>
-</p>
-
-
-<!-- /* a text element is an element in a text line that could have its own properties */ -->
-<p>
-  Shop early for the <strong>best selection</strong>  
-  <u>holiday</u> of favourites. 
-  <span class="span-example">Shop now &#62;
-  </span> 
-</p>
