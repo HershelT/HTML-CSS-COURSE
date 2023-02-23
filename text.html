@@ -1,0 +1,103 @@
+<style>
+  /* removes duplication 
+  targets all p elements on page
+  styles can be targeted on multiple styles
+  
+  browser files prioritize with css specificity
+  more specific selecto has priority
+  p is less specific than class like .video-title so it doesnt overide*/
+  p {
+    font-family: Arial;
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
+
+  .video-title {
+    font-weight: bold;
+    font-size: 18px;
+    width: 280px;
+    line-height: 24px;
+    margin-bottom: 5px; /*gets rid of default margins*/
+  }
+  .video-stats {
+    font-size: 14px;
+    color: rgb(96, 96, 96);
+    margin-bottom: 20px;
+  }
+
+  .video-author {
+    font-size: 14px;
+    color: rgb(96, 96, 96);
+    margin-bottom: 20 px;
+  }
+
+  .video-description {
+    font-size: 14px;
+    color: rgb(96, 96, 96);
+    width: 280px;
+    line-height: 22px;
+    margin-bottom: 100px;
+  }
+
+  .apple-text {
+    margin-bottom: 50px;
+    font-size: 14px;
+    background-color: rgb(227, 65, 64);
+    color: white;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+
+  .shop-link {
+    cursor: pointer;
+  }
+  
+  .shop-link:hover {
+    text-decoration: underline;
+  }
+
+  .span-example {
+    color: red;
+    margin-left: 12px; /*allows indent of more spaces on html*/
+  }
+
+  .span-example:hover {
+    text-decoration: underline;
+    cursor: pointer;
+  }
+</style>
+
+
+
+<p class="video-title">
+  Talking Tech and AI with Google CEO Sundar Pichai!
+</p>
+<!-- html identity for middle dot -->
+<p class="video-stats">
+  3.4M views &#183; 6 months ago
+</p>
+
+<p class="video-author">
+  Marques Brownlee &#10003; 
+</p>
+
+<p class="video-description">
+  Talking tech and AI on the heels of Google I/O. 
+  Also a daily driver phone reveal from Google's CEO.
+  Shoutout to Sundar!
+</p>
+
+<p class="apple-text">
+  Shop early for the best selection of holiday
+  favourites. <span class="shop-link">Shop now &#62;</span>
+</p>
+
+
+<!-- /* a text element is an element in a text line that could have its own properties */ -->
+<p>
+  Shop early for the <strong>best selection</strong>  
+  <u>holiday</u> of favourites. 
+  <span class="span-example">Shop now &#62;
+  </span> 
+</p>
