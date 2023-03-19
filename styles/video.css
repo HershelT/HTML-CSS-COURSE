@@ -53,14 +53,37 @@
   row-gap: 40px;
 }
 
+@media (max-width: 750px) {
+  .video-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media  (min-width: 751px) 
+    and (max-width:999px) {
+      .video-grid {
+        grid-template-columns: 1fr 1fr 1fr;
+      }  
+}
+/* use media to set what happens when screen is certain sifde */
+@media (min-width: 1000px) {
+  .video-grid {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+}
+
+
+
+
+
+
 .video-time {
   font-family: Roboto, Arial;
   font-size: 12px;
   font-weight: 500;
-  padding-left: 4px;
-  padding-right: 4px;
-  padding-top: 4px;
-  padding-bottom: 4px;
+  /* shorthand property */
+  /* first is top and bottom padding and left and right is second */
+ /* can have 4 different thingd */
+  padding: 4px;
   border-radius: 2px;
   background-color: black;
   color: white;
